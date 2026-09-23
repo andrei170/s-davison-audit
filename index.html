@@ -106,15 +106,16 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 
     <div class="hero">
       <div class="gradecard gc-F">
-        <div class="bigletter bl-F" style="font-size:30px">CERT<br>EXPIRED</div>
-        <div class="score100">the exact error your visitors are getting</div>
+        <div class="bigletter bl-F" style="font-size:40px">130</div>
+        <div class="score100">days your website has been showing a security warning</div>
       </div>
       <div class="heroread">
         <h2>This is not an opinion about your marketing. Your site does not open.</h2>
-        <p><b>Your SSL certificate has expired.</b> Anyone typing sdavisonelectrical.com gets a full-page browser
-        warning telling them the site is not secure, instead of your website.</p>
+        <p><b>Your SSL certificate expired on 16 May 2026 &mdash; one hundred and thirty days ago.</b> Since then,
+        anyone typing sdavisonelectrical.com has got a full-page browser warning telling them the site is not secure,
+        instead of your website.</p>
         <p><b>Everything behind that warning is fine.</b> That is the frustrating part.</p>
-        <div class="tag">Checked 24 September 2026 &middot; error code SEC_E_CERT_EXPIRED</div>
+        <div class="tag">Certificate read directly 24 September 2026 &middot; SEC_E_CERT_EXPIRED</div>
       </div>
     </div>
   </div>
@@ -150,17 +151,31 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 
 <section>
   <div class="wrap">
-    <div class="h">Finding 2 &mdash; This Is Usually A Ten-Minute Fix</div>
-    <div class="warn">
-      <div class="lab">And it costs nothing on most hosting</div>
-      <p><b>Your site is hosted with 20i, a UK host.</b> Like almost every host now, they provide free certificates
-      that normally renew automatically. When one expires it is usually because auto-renewal was switched off, the
-      certificate was issued manually once, or a renewal quietly failed and nobody saw the email.</p>
-      <p><b>Whoever manages your hosting can reissue it from the control panel.</b> On most setups it is one button and
-      it takes effect within minutes.</p>
-      <p><b>This is the single most urgent thing in this document and it should be done before anything else is
-      discussed.</b> Every day it stays broken is a day your website is worse than not having one &mdash; because a
-      warning page is worse than a blank.</p>
+    <div class="h">Finding 2 &mdash; It Is A Paid Certificate That Nobody Renewed</div>
+    <div class="code">
+  We read the certificate itself:
+
+    Issued to     <span class="ok">www.sdavisonelectrical.com</span>
+                  <span class="ok">sdavisonelectrical.com</span>      (both covered)
+    Issued by     <span class="ok">RapidSSL TLS RSA CA G1 &mdash; DigiCert Inc</span>
+    Valid from    <span class="ok">2 May 2025</span>
+    Valid until   <span class="ph">16 May 2026</span>
+
+    Today         <span class="ph">24 September 2026</span>
+    Expired       <span class="ph">130 days ago</span>
+    </div>
+    <div class="flag">
+      <div class="lab">This matters, because it explains why nobody caught it</div>
+      <p><b>This is not one of the free certificates that renew themselves.</b> It is a <b>purchased RapidSSL
+      certificate from DigiCert</b>, bought for roughly a year and due for manual renewal in May.</p>
+      <p><b>Free certificates renew automatically and mostly look after themselves. Paid ones have to be bought
+      again</b>, and when the reminder goes to an old email address or a supplier who has moved on, nothing happens and
+      nobody is told. The site simply stops opening one day in May.</p>
+      <p><b>You have two routes:</b> renew the RapidSSL certificate, or switch to a free automatically-renewing one,
+      which most UK hosts including 20i provide as standard. <b>We would suggest the second</b> &mdash; it costs
+      nothing and it removes the thing that caused this.</p>
+      <p><b>Either way it is a short job for whoever manages your hosting</b>, and it is the only item in this document
+      that is costing you money every hour it is not done.</p>
     </div>
   </div>
 </section>
@@ -182,6 +197,31 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
       immediately whether traffic recovers &mdash; and roughly when it fell off.</p>
       <p><b>It is worth looking at that history on the call.</b> If there is a cliff in the traffic, that is the date
       the certificate expired, and it tells you exactly how long this has been costing you.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 3b &mdash; What The Public Record Says</div>
+    <div class="code">
+  Companies House:
+
+    <span class="ok">S DAVISON (ELECTRICAL) LTD</span>
+    Company number    <span class="ok">05595351</span>
+    Incorporated      <span class="ok">18 October 2005</span>
+    Registered office <span class="ok">South Shields, Tyne and Wear, NE33 1RF</span>
+    </div>
+    <div class="win">
+      <div class="lab">Worth having straight before anyone checks</div>
+      <p><b>Your website says &ldquo;over 30 years&rdquo;. The limited company dates from 2005</b>, which is
+      twenty-one. Those are almost certainly both true &mdash; most firms of that age traded for years before
+      incorporating &mdash; but a procurement officer comparing the two will notice.</p>
+      <p><b>Saying it explicitly removes the question:</b> &ldquo;trading since 19xx, incorporated 2005&rdquo;. That is
+      stronger than either figure alone, and it is the kind of detail that gets a firm through a pre-qualification
+      form.</p>
+      <p class="tag">We matched this record on the exact trading name plus the South Shields location, which agrees
+      with the 0191 dialling code published on your site. If it is not your company, tell us and we will remove it.</p>
     </div>
   </div>
 </section>
@@ -218,7 +258,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
   <div class="wrap">
     <div class="h">The Scorecard</div>
     <div class="grid">
-      <div class="row"><div><div class="rname">Site reachable</div><div class="sc">No &mdash; expired certificate blocks every visitor</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Site reachable</div><div class="sc">No &mdash; certificate expired 16 May 2026, 130 days ago</div></div><div class="badge gF">F</div></div>
       <div class="row"><div><div class="rname">Site depth</div><div class="sc">307-word homepage</div></div><div class="badge gF">F</div></div>
       <div class="row"><div><div class="rname">Tender evidence</div><div class="sc">Schemes named but no numbers, cover or contracts</div></div><div class="badge gD">D</div></div>
       <div class="row"><div><div class="rname">Structured data</div><div class="sc">None found</div></div><div class="badge gD">D</div></div>
@@ -238,7 +278,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
       <li><b>Fix the certificate today.</b> Before this call ends, if possible. It is the only item on this list that
       is actively costing you money every hour.</li>
       <li><b>Look at the analytics history</b> and find the date traffic fell. That tells you what this has cost.</li>
-      <li><b>Set a calendar reminder for the renewal</b>, or confirm auto-renew is on. This should never happen twice.</li>
+      <li><b>Move to a free auto-renewing certificate</b> rather than buying another annual one, so this cannot recur. If you keep the paid certificate, put the renewal date in a calendar with a named owner.</li>
       <li><b>Build the tender evidence out</b> &mdash; NICEIC registration number, CHAS status, insurance cover levels,
       sectors served, and a handful of named contract types. That is what gets a firm onto a list.</li>
       <li><b>Add LocalBusiness and Service structured data</b>, and take the homepage past 307 words.</li>
@@ -264,11 +304,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
     same request returned HTTP 200 and served the site normally. This is reproducible.</b> <b>Exactly what a given
     visitor sees depends on their browser and device, and we have not tested every browser. The hosting provider was
     identified from a reverse lookup of the serving IP address and may be a reseller or intermediary rather than the
-    account holder.</b> <b>Statements about how certificates are normally issued and renewed, and that reissuing is
-    typically quick and free, are general observations about common hosting arrangements &mdash; they are not a
-    statement about your specific account, contract or control panel, and the actual fix should be confirmed with
-    whoever manages your hosting. AG1 has not accessed your hosting and nothing here is technical or security
-    advice.</b> <b>The homepage word count, the Google Analytics 4 property G-BRQGM2ME5Z, the tappable telephone links,
+    account holder.</b> <b>The certificate details &mdash; that it is issued to both www.sdavisonelectrical.com and sdavisonelectrical.com, issued by RapidSSL TLS RSA CA G1 (DigiCert Inc), valid from 2 May 2025 to 16 May 2026, and therefore 130 days expired as at 24 September 2026 &mdash; were read directly from the certificate presented by the server on that date and are reproducible. We record openly that an earlier draft of this document described the fix as free and automatic; that is true of free issuing authorities but not of this certificate, which is a purchased product requiring renewal, and the corrected position is the one shown.</b> <b>Statements about how paid and free certificates differ, and about what hosting providers commonly offer, are general observations &mdash; they are not a statement about your specific account, contract or control panel, and the actual fix should be confirmed with whoever manages your hosting. AG1 has not accessed your hosting and nothing here is technical or security advice.</b> <b>The Companies House record for S DAVISON (ELECTRICAL) LTD, company number 05595351, incorporated 18 October 2005, registered office in South Shields, Tyne and Wear NE33 1RF, was read from the public register on 24 September 2026. We matched it on an exact trading-name match together with a location consistent with the 0191 dialling code published on the website; that is a reasoned identification, not a confirmed one, and it should be corrected if wrong. We draw no adverse inference from the difference between the stated trading history and the incorporation date, which commonly differ for legitimate reasons.</b> <b>The homepage word count, the Google Analytics 4 property G-BRQGM2ME5Z, the tappable telephone links,
     the enquiry form, the NICEIC and CHAS mentions, the counts of "commercial" and "industrial", the "over 30 years"
     and "public and private sector" wording, and the absence of structured data, tag manager, advertising tag and call
     tracking were read from the served pages with certificate validation bypassed. Word counts exclude script, style
