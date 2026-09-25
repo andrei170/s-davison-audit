@@ -102,22 +102,23 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 <nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./" class="on">Audit</a><a href="competitors.html">Competitors</a></div></nav>
 <header>
   <div class="wrap">
-    <div class="eyebrow">Website Audit &middot; S Davison (Electrical) Ltd &middot; North East England</div>
-    <div class="sub">Prepared for Michael Davison &middot; 24 September 2026 &middot; AG1 Consulting</div>
-    <h1>Your Website Is Showing A Security Warning To Everybody Who Tries To Open It.</h1>
+    <div class="eyebrow">Website &amp; Commercial Presence Audit &middot; S Davison (Electrical) Ltd &middot; South Shields</div>
+    <div class="sub">Prepared for Michael Davison &middot; 24 September 2026, rebuilt for the commercial side 25 September 2026 &middot; AG1 Consulting</div>
+    <h1>You Are The Only Firm In Your Market Measuring Anything. You Are Also The Only One Whose Site A Buyer Cannot Open.</h1>
 
     <div class="hero">
       <div class="gradecard gc-F">
-        <div class="bigletter bl-F" style="font-size:40px">130</div>
-        <div class="score100">days your website has been showing a security warning</div>
+        <div class="bigletter bl-F" style="font-size:44px">0</div>
+        <div class="score100">visitors can reach your site without clicking past a security warning</div>
       </div>
       <div class="heroread">
-        <h2>You work commercial and industrial, not domestic. That changes what this costs you &mdash; but not whether it matters.</h2>
-        <p><b>Your SSL certificate expired on 16 May 2026 &mdash; one hundred and thirty days ago.</b> Since then,
-        anyone typing sdavisonelectrical.com has got a full-page browser warning telling them the site is not secure,
-        instead of your website.</p>
-        <p><b>You are not losing a stream of domestic enquiries &mdash; that is not how your work arrives.</b> What you are losing is the moment a buyer, a main contractor or a procurement officer who already has your name types it in to check you out.</p>
-        <div class="tag">Certificate read directly 24 September 2026 &middot; SEC_E_CERT_EXPIRED</div>
+        <h2>We rebuilt this document after our call. The first version was aimed at winning domestic enquiries through a form, and that is not your business.</h2>
+        <p>This one is aimed at the people who actually buy from you: <b>council and government procurement, engineering
+        firms, and the person checking you out before a tender.</b></p>
+        <p><b>The headline finding has not changed, and it is still the first thing to fix.</b> Your certificate is
+        broken. We could not load your site over a normal secure connection at all. It only loaded once we told our
+        tools to ignore the certificate.</p>
+        <div class="tag">Every figure read directly from the named sites on 25 September 2026 &mdash; sources and limits at the foot</div>
       </div>
     </div>
   </div>
@@ -125,184 +126,211 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 
 <section>
   <div class="wrap">
-    <div class="h">Finding 1 &mdash; What Actually Happens When Somebody Visits</div>
+    <div class="h">Finding 1 &mdash; The Certificate, And Why It Is Worse For You Than For A Domestic Firm</div>
     <div class="code">
-  http://sdavisonelectrical.com
-      -> <span class="ok">301 redirect</span> to https://sdavisonelectrical.com/
-
-  https://sdavisonelectrical.com
-      -> <span class="ph">connection fails</span>
-      -> <span class="ph">SEC_E_CERT_EXPIRED</span>
-         "The received certificate has expired"
-
-  With the certificate check bypassed:
-      -> <span class="ok">200 OK</span> &mdash; the site is there and works
+  Normal secure request to sdavisonelectrical.com     <span class="ph">failed &mdash; no response at all</span>
+  Same request, ignoring the certificate              <span class="ok">200 OK, site loads fine</span>
     </div>
     <div class="flag">
-      <div class="lab">In plain English</div>
-      <p><b>Your domain sends every visitor to the secure version of your site, and the security certificate on it has
-      run out.</b> Browsers will not show a site with an expired certificate. They show a red or grey warning page
-      saying the connection is not private, with your domain name on it.</p>
-      <p><b>For a domestic trade this would mean lost enquiries. For you it means something different and arguably worse.</b> Your work arrives through frameworks, procurement and people who already know the name. Those people still check. <b>A procurement officer confirming you are a real firm before adding you to a list reads a browser security warning and closes the tab.</b></p>
-      <p><b>The site itself is untouched and working.</b> We bypassed the certificate check and it loaded normally.
-      Nothing has been hacked and nothing is lost.</p>
+      <div class="lab">Nothing is broken behind it. The building is fine, the front door is jammed.</div>
+      <p><b>Your site works.</b> The content is there, the pages load, nothing has been lost. The only problem is that
+      a browser will not open it without showing a warning that says the connection is not private.</p>
+      <p><b>On domestic work you would lose some enquiries to this. On your work it is more serious than that.</b> A
+      procurement officer running pre-qualification checks on a bidder, or a facilities manager who has been given your
+      name, will not click past a security warning on a company they are considering handing a contract to. <b>It reads
+      as a firm that does not look after its own house.</b></p>
+      <p><b>You mentioned you may already be paying GoDaddy for this.</b> If the domain and email are with them, there
+      is a reasonable chance the certificate is already bought and simply not applied. <b>Check that before paying
+      anybody, including us.</b></p>
+      <p class="tag">You told us it has been like this "probably two years". We can only confirm it is broken today.</p>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="h">Finding 2 &mdash; It Is A Paid Certificate That Nobody Renewed</div>
+    <div class="h">Finding 2 &mdash; You Have The Only Working Analytics In This Market</div>
     <div class="code">
-  We read the certificate itself:
-
-    Issued to     <span class="ok">www.sdavisonelectrical.com</span>
-                  <span class="ok">sdavisonelectrical.com</span>      (both covered)
-    Issued by     <span class="ok">RapidSSL TLS RSA CA G1 &mdash; DigiCert Inc</span>
-    Valid from    <span class="ok">2 May 2025</span>
-    Valid until   <span class="ph">16 May 2026</span>
-
-    Today         <span class="ph">24 September 2026</span>
-    Expired       <span class="ph">130 days ago</span>
-    </div>
-    <div class="flag">
-      <div class="lab">This matters, because it explains why nobody caught it</div>
-      <p><b>This is not one of the free certificates that renew themselves.</b> It is a <b>purchased RapidSSL
-      certificate from DigiCert</b>, bought for roughly a year and due for manual renewal in May.</p>
-      <p><b>Free certificates renew automatically and mostly look after themselves. Paid ones have to be bought
-      again</b>, and when the reminder goes to an old email address or a supplier who has moved on, nothing happens and
-      nobody is told. The site simply stops opening one day in May.</p>
-      <p><b>You have two routes:</b> renew the RapidSSL certificate, or switch to a free automatically-renewing one,
-      which most UK hosts including 20i provide as standard. <b>We would suggest the second</b> &mdash; it costs
-      nothing and it removes the thing that caused this.</p>
-      <p><b>Either way it is a short job for whoever manages your hosting.</b> It is the only item in this document that can be finished today, and the only one that is actively working against you while it waits.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="h">Finding 3 &mdash; You Have Been Collecting Data On A Site Nobody Can Reach</div>
-    <div class="code">
-  Google Analytics 4        <span class="ok">G-BRQGM2ME5Z</span>   installed and running
-
-  Google Tag Manager        <span class="ph">not found</span>
-  Google Ads tag            <span class="ph">not found</span>
-  Meta pixel                <span class="ph">not found</span>
-  Call tracking             <span class="ph">not found</span>
+  S Davison            <span class="ok">GA4 live &mdash; G-BRQGM2ME5Z</span>    (plus a dead UA tag, UA-304221277-1)
+  AEL Electrical       <span class="ok">GA4 live</span>
+  Switch Electrical    <span class="ph">none found</span>
+  M E C (North East)   <span class="ph">none found</span>
+  North East Electrical <span class="ph">dead Universal Analytics only &mdash; stopped collecting July 2023</span>
+  Retroflo             <span class="ph">none found</span>
+  Electrical Solutions NE <span class="ph">none found</span>
     </div>
     <div class="win">
-      <div class="lab">There is a silver lining here</div>
-      <p><b>You have analytics installed.</b> That means once the certificate is fixed, you will be able to see
-      immediately whether traffic recovers &mdash; and roughly when it fell off.</p>
-      <p><b>It is worth looking at that history on the call.</b> If there is a cliff in the traffic, that is the date
-      the certificate expired, and it tells you exactly how long this has been costing you.</p>
+      <div class="lab">We owe you a correction on this one, and it is in your favour</div>
+      <p><b>On our call we said we could not find any Google tracking on your site. That was wrong.</b> You have a live
+      Google Analytics 4 property and it has been running. The reason our first look missed it is the certificate:
+      an automated read over a normal secure connection gets nothing back at all, so it reported an empty site.
+      <b>The written audit had it right; the spoken version did not.</b></p>
+      <p><b>Why this matters commercially.</b> Two of six competitors have any working measurement. One of them, North
+      East Electrical, is running Google's old analytics product which stopped collecting data in July 2023 &mdash;
+      they have twenty-eight pages and twenty-eight enquiry forms and no idea which of them works.</p>
+      <p><b>So you are ahead, in a market where nearly nobody is counting.</b> The frustrating part is that the thing
+      doing the counting sits behind a door that will not open.</p>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="h">Finding 3b &mdash; What The Public Record Says</div>
+    <div class="h">Finding 3 &mdash; Thirty Years Of Contracts And Not One Of Them Written Down</div>
     <div class="code">
-  Companies House:
+  Named projects or case studies published:
 
-    <span class="ok">S DAVISON (ELECTRICAL) LTD</span>
-    Company number    <span class="ok">05595351</span>
-    Incorporated      <span class="ok">18 October 2005</span>
-    Registered office <span class="ok">South Shields, Tyne and Wear, NE33 1RF</span>
-    </div>
-    <div class="win">
-      <div class="lab">Worth having straight before anyone checks</div>
-      <p><b>Your website says &ldquo;over 30 years&rdquo;. The limited company dates from 2005</b>, which is
-      twenty-one. Those are almost certainly both true &mdash; most firms of that age traded for years before
-      incorporating &mdash; but a procurement officer comparing the two will notice.</p>
-      <p><b>Saying it explicitly removes the question:</b> &ldquo;trading since 19xx, incorporated 2005&rdquo;. That is
-      stronger than either figure alone, and it is the kind of detail that gets a firm through a pre-qualification
-      form.</p>
-      <p class="tag">We matched this record on the exact trading name plus the South Shields location, which agrees
-      with the 0191 dialling code published on your site. If it is not your company, tell us and we will remove it.</p>
-    </div>
-  </div>
-</section>
+    S Davison               <span class="ph">none</span>
+    Switch Electrical       <span class="ph">none found</span>
+    M E C (North East)      <span class="ph">none found</span>
+    North East Electrical   <span class="ok">2 pages</span>
 
-<section>
-  <div class="wrap">
-    <div class="h">Finding 4 &mdash; Behind The Warning Is A Better Site Than We First Credited You With</div>
-    <div class="code">
-  Every page, measured individually:
-
-    /                              <span class="ok">307</span> words
-    /index.php/about               <span class="ok">295</span>
-    <span class="ok">/index.php/commercial          1,099</span>
-    <span class="ok">/index.php/industrial          1,112</span>
-    /index.php/contact             <span class="ok">137</span>
-
-    <span class="ok">TOTAL: 5 pages, 2,950 words</span>
-
-  Tappable phone numbers         <span class="ok">4</span>
-  Enquiry form                   <span class="ok">1</span>
-  NICEIC + CHAS                  <span class="ok">stated on /about</span>
-  Structured data                <span class="ph">none found</span>
-    </div>
-    <div class="win">
-      <div class="lab">We owe you a correction here</div>
-      <p><b>An earlier version of this document, issued this morning, said your site was 307 words and thin, and that
-      nothing about your commercial and industrial work was published.</b> That was wrong. We had read your homepage
-      and your sitemap, which declares three pages, instead of following your own menu.</p>
-      <p><b>You have a 1,099-word commercial page and a 1,112-word industrial page.</b> They name offices, units,
-      warehouses, schools, factories and production centres. Your about page states NICEIC approval and CHAS
-      registration in full.</p>
-      <p><b>That is genuinely more than either local competitor publishes.</b> Schofield Electricals runs 182 words on
-      its homepage; South Tyneside Electrical runs 195.</p>
+  Your own examples, from our call:
+    A school rewire, around &pound;300,000
+    A sub-sea engineering client &mdash; ROV manufacture, power and generator installation
+    Distribution circuits and large cable installation that few local firms take on
     </div>
     <div class="flag">
-      <div class="lab">Which makes the certificate worse, not better</div>
-      <p><b>You have written two thousand nine hundred words about exactly the work you want more of, and nobody has
-      been able to read a single one of them since 16 May.</b></p>
-      <p>If the site were genuinely thin, the expired certificate would be costing you little. <b>It is not thin. It is
-      the best-stocked electrical site in South Shields, behind a door that will not open.</b></p>
+      <div class="lab">This is the largest gap in the document and it costs nothing but time to close</div>
+      <p><b>You told us there are not many firms locally doing the bigger cable installations you do.</b> That is a
+      genuine competitive position and there is no evidence of it anywhere a buyer can see.</p>
+      <p><b>Commercial and public-sector work is not bought the way domestic work is bought.</b> A homeowner picks on
+      price and on who answers the phone. A procurement officer has to justify the award, often in writing, to somebody
+      above them. <b>What they are looking for is evidence you have done this exact thing, at this size, before.</b></p>
+      <p><b>Three written up properly would put you ahead of every firm in this comparison bar one.</b> Each needs the
+      building and its use, what the job involved, the scale, how long it took, and how you worked around an occupied
+      site. The school is the obvious first one.</p>
+      <p><b>You raised this yourself on the call.</b> You said you want case studies on the site, and demonstrations of
+      what you do. We agree, and we would put it above everything else on this list except the certificate.</p>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="h">Finding 5 &mdash; What A Commercial Buyer Looks For, And What You Publish</div>
+    <div class="h">Finding 4 &mdash; "Nobody Searches For A Commercial Electrician." One Of Your Competitors Disagrees, With Money.</div>
     <div class="code">
-  What a pre-qualification check wants to see:
+  Google Ads conversion tracking found on each firm:
 
-    Scheme registration NUMBERS        <span class="ph">not published</span>
-    Insurance cover levels             <span class="ph">not published</span>
-    Named sectors served               <span class="ph">no sector pages</span>
-    Named contracts / case studies     <span class="ph">none published</span>
-    Social value / CSR position        <span class="ph">not published</span>
-    Constructionline or SSIP           <span class="ph">not shown</span>
-
-  What you do publish:
-
-    NICEIC and CHAS, named             <span class="ok">on /about</span>
-    Commercial capability              <span class="ok">1,099 words</span>
-    Industrial capability              <span class="ok">1,112 words</span>
-    30+ years, public and private      <span class="ok">stated</span>
-    </div>
-    <div class="flag">
-      <div class="lab">You have the capability written down. You have none of the proof.</div>
-      <p><b>Your commercial and industrial pages describe what you can do very well.</b> What they do not do is
-      evidence that you have done it, for whom, or that you are safe to put on a list.</p>
-      <p><b>A buyer deciding whether to invite you to quote is not asking &ldquo;can they wire a warehouse&rdquo;.</b>
-      They assume that. They are asking whether you will pass their checks, whether you have done work like theirs
-      before, and whether anything about you is going to become their problem.</p>
-      <p><b>Thirty years of public and private sector contracts and not one of them is written up anywhere.</b> Those
-      are the references a pre-qualification questionnaire asks for by name, and you have already done the work.</p>
+    AEL Electrical          <span class="ok">AW-17594297886, with a conversion tag</span>
+    S Davison               <span class="ph">none</span>
+    Switch Electrical       <span class="ph">none</span>
+    M E C (North East)      <span class="ph">none</span>
+    North East Electrical   <span class="ph">none</span>
+    Retroflo                <span class="ph">none</span>
+    Electrical Solutions NE <span class="ph">none</span>
     </div>
     <div class="warn">
-      <div class="lab">Social value is worth knowing about</div>
-      <p><b>On public-sector work, social value is frequently a scored part of the award</b> &mdash; local employment,
-      apprenticeships, local supply chain, community work. Buyers increasingly weight it explicitly.</p>
-      <p><b>A thirty-year South Shields family firm employing local people has a genuinely good story there and does
-      not tell it anywhere.</b> Scoring varies by buyer and contract and we cannot tell you what weight it carries for
-      yours &mdash; but it is free to write down and it is the kind of thing that separates two firms on price.</p>
+      <div class="lab">You made a fair point on the call and it deserves a real answer rather than a sales one</div>
+      <p><b>You said you could never understand how Google Ads would work for you, because somebody browsing is not
+      looking for a commercial electrician, and that an industrial electrician is a specialist thing.</b> That is a
+      reasonable position and plenty of trades genuinely do not suit paid search.</p>
+      <p><b>So we checked instead of arguing.</b> AEL Electrical, working the same North East commercial ground
+      &mdash; fit-outs, schools, care facilities, factories &mdash; is running Google Ads <b>with a conversion tag
+      installed</b>. The conversion tag is the part that matters. It means they are not just spending, they are
+      measuring what the spend produces.</p>
+      <p><b>A firm that is measuring and has not switched it off is a firm for whom it is working.</b> That is not
+      proof it would work for you, and we are not going to pretend it is. It does mean the question is open rather
+      than closed.</p>
+      <p><b>What we would actually suggest, and it is smaller than it sounds.</b> Not a broad campaign. A narrow one
+      against a handful of specific terms &mdash; the kind of thing a facilities manager types when a distribution
+      board has failed or a building needs rewiring &mdash; geographically fenced to your travel radius, with a hard
+      monthly cap. <b>If it produces nothing in two months, it gets switched off and you have lost very little.</b></p>
+      <p class="tag">We have not seen AEL's account, spend or results. We observe only that the tags are present on their site.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 5 &mdash; Half Your Work Comes From Councils. All Twelve Publish In One Place.</div>
+    <div class="code">
+  Your own figures, from our call:
+
+    Council and government work        <span class="ok">~50% of turnover</span>
+    Engineering companies              <span class="ok">~30%</span>
+    Everything over &pound;10,000 goes to tender
+    Tenders you currently bid          <span class="ph">roughly one a month</span>
+    </div>
+    <div class="warn">
+      <div class="lab">This is the channel that actually matches how you sell, and it is not a website problem</div>
+      <p><b>The twelve North East councils advertise their opportunities through a single procurement body, NEPO, on
+      its tendering portal.</b> Framework agreements sit behind it, and getting onto a framework means being invited to
+      bid rather than hunting for notices.</p>
+      <p><b>You told us you bid about one tender a month.</b> We do not know whether that is because one is all that
+      comes up that suits you, or because you are only seeing some of what is published. <b>That is a genuine question
+      and we are not going to guess the answer.</b> It is the first thing we would want to establish on Monday.</p>
+      <p><b>Why we are raising it at all:</b> you asked on the call where the jobs would actually come from. For a firm
+      that is half public sector and where everything worth having goes to tender, the honest answer is that the
+      largest single lever is probably not advertising. It is being visible, credible and registered where your buyers
+      are already legally obliged to publish.</p>
+      <p><b>And that loops back to Finding 3.</b> Frameworks and pre-qualification ask for evidence of comparable work
+      at comparable value. The school rewire is exactly that, and it is written down nowhere.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 6 &mdash; Your Accreditations Are Stated But Not Evidenced</div>
+    <div class="code">
+  Accreditations named on each firm's own site:
+
+    S Davison               <span class="ok">NICEIC, CHAS</span>
+    Retroflo                <span class="ok">NICEIC, CHAS</span>
+    AEL Electrical          <span class="ok">NICEIC, Constructionline</span>
+    Switch Electrical       NICEIC
+    M E C (North East)      NICEIC
+    North East Electrical   NICEIC
+    Electrical Solutions NE <span class="ph">none found</span>
+
+  On your site:
+    Registration numbers    <span class="ph">not shown</span>
+    Insurance cover levels  <span class="ph">not shown</span>
+    </div>
+    <div class="warn">
+      <div class="lab">NICEIC is table stakes here. CHAS is where you separate.</div>
+      <p><b>Every firm we checked bar one names NICEIC.</b> It does not distinguish you. <b>CHAS does</b> &mdash; only
+      you and Retroflo show it, and it is a health and safety assessment that public sector buyers and main contractors
+      specifically ask about.</p>
+      <p><b>But naming a scheme is not the same as evidencing it.</b> Your registration numbers are not published and
+      neither are your insurance cover levels. Those are the two things a procurement form asks for by name, and
+      putting them in the footer means they appear on every page rather than being requested by email.</p>
+      <p><b>AEL carries Constructionline, which you do not show.</b> Worth a conversation about whether you hold it,
+      because it appears on a great many public sector pre-qualification requirements.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 7 &mdash; No Sector Pages, And No Structured Data</div>
+    <div class="code">
+  Your two strongest pages:
+    /industrial   <span class="ok">1,109 words</span>
+    /commercial   <span class="ok">1,096 words</span>
+    Homepage      305 words
+    About         294 words
+
+  Sector pages (local authority, education, healthcare, industrial client types)
+    <span class="ph">none</span>
+
+  Structured data:
+    S Davison               <span class="ph">none found</span>
+    M E C (North East)      <span class="ok">FAQ, address, opening hours, coordinates</span>
+    North East Electrical   <span class="ok">LocalBusiness, reviews, ratings, breadcrumbs</span>
+    </div>
+    <div class="warn">
+      <div class="lab">Your two best pages are better than anything local. They are also doing all the work alone.</div>
+      <p><b>Your commercial and industrial pages are over a thousand words each and they are the strongest thing on
+      the site.</b> Your homepage is three hundred. The depth is in the right place, but there is nothing underneath
+      it.</p>
+      <p><b>You named the sectors you want on the call:</b> hospitals, new construction, schools, and the engineering
+      and sub-sea clients you already serve. <b>None of those has a page.</b> A page per sector, written for that
+      buyer, is what gets found by somebody searching for a contractor with experience in their specific setting.</p>
+      <p><b>Two competitors publish structured data and you publish none.</b> That is the code that tells Google what
+      kind of business you are, where you are and when you are open, rather than leaving it to guess from your words.
+      It is a one-off job, not an ongoing cost.</p>
     </div>
   </div>
 </section>
@@ -310,20 +338,19 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 <section>
   <div class="wrap">
     <div class="h">The Scorecard</div>
-    <div class="grid">
-      <div class="row"><div><div class="rname">Site reachable</div><div class="sc">No &mdash; certificate expired 16 May 2026, 130 days ago</div></div><div class="badge gF">F</div></div>
-      <div class="row"><div><div class="rname">Site depth</div><div class="sc">5 pages, 2,950 words &mdash; more than either local rival</div></div><div class="badge gB">B</div></div>
-      <div class="row"><div><div class="rname">Tender evidence</div><div class="sc">NICEIC and CHAS named; no numbers, cover or named contracts</div></div><div class="badge gD">D</div></div>
-      <div class="row"><div><div class="rname">Commercial &amp; industrial pages</div><div class="sc">1,099 and 1,112 words &mdash; nobody local matches this</div></div><div class="badge gA">A</div></div>
-      <div class="row"><div><div class="rname">Structured data</div><div class="sc">None found</div></div><div class="badge gD">D</div></div>
-      <div class="row"><div><div class="rname">Named contracts</div><div class="sc">30 years of work, none written up</div></div><div class="badge gF">F</div></div>
-      <div class="row"><div><div class="rname">Sector pages</div><div class="sc">None &mdash; no local authority, education or housing page</div></div><div class="badge gF">F</div></div>
-      <div class="row"><div><div class="rname">Ad tracking</div><div class="sc">No Ads tag, pixel or call tracking</div></div><div class="badge gD">D</div></div>
+    <div class="sheet">
+      <div class="row"><div><div class="rname">Site reachable</div><div class="sc">No &mdash; secure connection fails entirely, loads only if the certificate is ignored</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Named contracts</div><div class="sc">30 years of work, none written up anywhere</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Sector pages</div><div class="sc">None &mdash; no local authority, education, healthcare or new build page</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Structured data</div><div class="sc">None found; two competitors publish it</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Accreditation evidence</div><div class="sc">NICEIC and CHAS named, but no registration numbers or cover levels</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Paid search</div><div class="sc">None &mdash; one direct competitor runs it with conversion tracking</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Homepage depth</div><div class="sc">305 words carrying a commercial and industrial contractor</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Commercial &amp; industrial pages</div><div class="sc">1,096 and 1,109 words &mdash; the best local content we found</div></div><div class="badge gA">A</div></div>
+      <div class="row"><div><div class="rname">Analytics</div><div class="sc">GA4 live &mdash; only two of seven firms have working measurement</div></div><div class="badge gA">A</div></div>
       <div class="row"><div><div class="rname">Enquiry routes</div><div class="sc">Four tappable numbers and a form</div></div><div class="badge gB">B</div></div>
-      <div class="row"><div><div class="rname">Analytics</div><div class="sc">GA4 live &mdash; so recovery is measurable</div></div><div class="badge gB">B</div></div>
-      <div class="row"><div><div class="rname">Credentials stated</div><div class="sc">NICEIC and CHAS, 30+ years, both sectors</div></div><div class="badge gA">A</div></div>
+      <div class="row"><div><div class="rname">Positioning</div><div class="sc">Clearly commercial and industrial, no domestic drift</div></div><div class="badge gA">A</div></div>
     </div>
-    <div class="tag" style="margin-top:12px">Every row below the first is ordinary. The first row is why none of the others currently matter.</div>
   </div>
 </section>
 
@@ -331,50 +358,65 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
   <div class="wrap">
     <div class="h">What We Would Do, In Order</div>
     <ul class="road">
-      <li><b>Fix the certificate today.</b> It is the only item on this list that can be finished this afternoon, and
-      the only one actively working against you while it waits &mdash; every buyer who checks you between now and then
-      sees a security warning.</li>
-      <li><b>Look at the analytics history</b> and find the date traffic fell. On commercial work that will not be a
-      large number &mdash; but it tells you how many people were checking you out, which is worth knowing on its own.</li>
-      <li><b>Move to a free auto-renewing certificate</b> rather than buying another annual one, so this cannot recur. If you keep the paid certificate, put the renewal date in a calendar with a named owner.</li>
-      <li><b>Add the numbers to the schemes you already name.</b> NICEIC registration number, CHAS status and expiry, insurance cover levels. You state both schemes on your about page &mdash; a buyer pre-qualifying you wants the number.</li>
-      <li><b>Write up the named work.</b> Thirty years of public and private contracts, none published. Those are the references a pre-qualification questionnaire asks for, and they are the single biggest gap.</li>
-      <li><b>Build sector pages</b> &mdash; local authority, education, healthcare, housing, industrial. A buyer wants to see their own sector named before they believe you understand it.</li>
-      <li><b>Write the social value page.</b> Local firm, local people, thirty years. Free to write, and scored on public work.</li>
-      <li><b>Add LocalBusiness and Service structured data.</b> A one-off technical job.</li>
-      <li><b>Then, and only then, talk about generating enquiries.</b> There is no point driving anybody to a site that
-      does not open.</li>
+      <li><b>Fix the certificate.</b> Today if possible, and check GoDaddy first in case you have already paid for it.
+      Nothing else on this list matters while the front door is jammed.</li>
+      <li><b>Write up three contracts.</b> The school, the sub-sea client, and one large cable installation. This is
+      the item that wins tenders and pre-qualifications, and it is the one no competitor except North East Electrical
+      has bothered with.</li>
+      <li><b>Put registration numbers and insurance cover in the footer.</b> Twenty minutes, appears on every page,
+      and it answers the questions a procurement form asks by name.</li>
+      <li><b>Establish what you are actually seeing on the tender side.</b> One bid a month may be all that suits you,
+      or it may be a fraction of what is published. We should find out before deciding anything else.</li>
+      <li><b>Build a page per sector</b> &mdash; local authority, education, healthcare, industrial and new build.
+      Your commercial and industrial pages prove you can write them.</li>
+      <li><b>Add structured data.</b> One-off job, and two of your competitors already have it.</li>
+      <li><b>Only then, a narrow paid search test</b>, capped and geo-fenced, against a handful of specific terms. If
+      it produces nothing in two months, switch it off.</li>
     </ul>
   </div>
 </section>
 
 <div class="cta">
   <div class="wrap">
-    <h2>Thirty years, NICEIC approved, public and private sector &mdash; behind a browser warning.</h2>
-    <p>The cheapest fix we have found for anybody this month, and the most urgent.</p>
+    <h2>Eight staff, thirty years, a £300,000 school rewire, and the only working analytics in your market.</h2>
+    <p>None of it is visible to anyone deciding whether to invite you to bid.</p>
   </div>
 </div>
 
 <footer>
   <div class="wrap">
-    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 24 September 2026<br><br>
-    For Michael Davison, S Davison (Electrical) Ltd. <b>The certificate finding was produced by requesting
-    sdavisonelectrical.com on 24 September 2026: http returned a 301 redirect to https, and the https request failed
-    with the error SEC_E_CERT_EXPIRED, "The received certificate has expired". With certificate validation bypassed the
-    same request returned HTTP 200 and served the site normally. This is reproducible.</b> <b>Exactly what a given
-    visitor sees depends on their browser and device, and we have not tested every browser. The hosting provider was
-    identified from a reverse lookup of the serving IP address and may be a reseller or intermediary rather than the
-    account holder.</b> <b>The certificate details &mdash; that it is issued to both www.sdavisonelectrical.com and sdavisonelectrical.com, issued by RapidSSL TLS RSA CA G1 (DigiCert Inc), valid from 2 May 2025 to 16 May 2026, and therefore 130 days expired as at 24 September 2026 &mdash; were read directly from the certificate presented by the server on that date and are reproducible. We record openly that an earlier draft of this document described the fix as free and automatic; that is true of free issuing authorities but not of this certificate, which is a purchased product requiring renewal, and the corrected position is the one shown.</b> <b>Statements about how paid and free certificates differ, and about what hosting providers commonly offer, are general observations &mdash; they are not a statement about your specific account, contract or control panel, and the actual fix should be confirmed with whoever manages your hosting. AG1 has not accessed your hosting and nothing here is technical or security advice.</b> <b>The Companies House record for S DAVISON (ELECTRICAL) LTD, company number 05595351, incorporated 18 October 2005, registered office in South Shields, Tyne and Wear NE33 1RF, was read from the public register on 24 September 2026. We matched it on an exact trading-name match together with a location consistent with the 0191 dialling code published on the website; that is a reasoned identification, not a confirmed one, and it should be corrected if wrong. We draw no adverse inference from the difference between the stated trading history and the incorporation date, which commonly differ for legitimate reasons.</b> <b>The five pages reachable from your own navigation and their individual word counts totalling 2,950, the Google Analytics 4 property G-BRQGM2ME5Z, the tappable telephone links, the enquiry form, the NICEIC and CHAS statements on the about page, and the absence of structured data, tag manager, advertising tag and call tracking were read from the served pages with certificate validation bypassed on 24 September 2026. Word counts exclude script, style and comment blocks.</b> <b>We record openly that an earlier version of this document, issued the same morning, described the site as 307 words and thin and stated that nothing about your commercial and industrial work was published. That was wrong. It came from reading the homepage and the published sitemap, which declares three pages, rather than following the site menu. The corrected figures above replace it.</b> <b>Items recorded as "not found" describe what a static read returned and are not proof of absence; pages may exist that are not linked from those we followed.</b> <b>NICEIC approval and CHAS status are as the business states them on its own website and have not
-    been verified with NICEIC, CHAS or any other scheme; we make no claim that this or any business does or does not
-    hold any accreditation.</b> <b>Statements about what wins tender or framework work are general commercial
-    observations; requirements vary by buyer, sector and contract, and nothing here is procurement, legal, insurance or
-    compliance advice.</b> <b>We record openly that an earlier version of this document was written on the assumption that the website is a source of inbound enquiries and described the expired certificate as costing money every hour. This business works commercial and industrial only, not domestic, and its work arrives through procurement, frameworks and existing relationships rather than search. The certificate remains a live problem for credibility at the point a buyer checks the firm, but no claim is now made about lost enquiry volume, and none should be inferred. An earlier version also recommended building pages for surrounding towns; that is a domestic local-search tactic, it is not appropriate to this business, and it has been removed.</b> <b>Statements about what pre-qualification checks look for, and about social value being scored on public-sector work, are general commercial observations. Requirements, weightings and scoring vary by buyer, sector and contract; nothing here states what applies to any contract you may bid for, and nothing here is procurement, legal, insurance or compliance advice.</b> <b>The commercial-only focus, the interest in commercial and industrial tender work and the recent trading position are
-    as reported to AG1 and have not been verified. No revenue, staffing, pricing, win rate, licensing or insurance has
-    been assessed.</b> <b>No Google Business Profile, review count, map position, ranking or traffic figure has been
-    measured, and no competitor has been assessed.</b> <b>⚠ No enquiry, call, tender outcome, ranking or revenue result
-    is promised, forecast or guaranteed anywhere in this document.</b> Nothing here is a comment on the competence,
-    licensing, insurance or workmanship of this or any other business. Company and scheme names are used for
-    identification only and belong to their respective owners. The grades are AG1's own editorial assessment.
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; issued 24 September 2026, rebuilt for the commercial side 25 September 2026.
+    For Michael Davison, S Davison (Electrical) Ltd, South Shields.
+    <b>⚠ WE RECORD TWO CORRECTIONS. First, this document was originally addressed to Stephen Davison. Stephen previously owned the business and
+    no longer does; it is corrected throughout. Second, during our call of 24 September it was stated verbally that no Google analytics or tags
+    could be found on the site. That was wrong: a live Google Analytics 4 property, G-BRQGM2ME5Z, is present, along with a dead Universal
+    Analytics tag, UA-304221277-1. The error was caused by reading the site over a normal secure connection, which fails because of the expired
+    certificate and returns nothing. The written audit recorded the GA4 property correctly.</b>
+    <b>The certificate finding was tested on 25 September 2026: a standard HTTPS request to sdavisonelectrical.com returned no response at all,
+    and the identical request with certificate verification disabled returned HTTP 200 and the full page. We make no claim about how long it has
+    been in that state; the statement that it has been so for around two years is as you described it and has not been verified.</b>
+    <b>Page counts, word counts, analytics tags, Google Ads tags, structured data and accreditation mentions for every named firm were read
+    directly from those firms' own websites on 25 September 2026 by following each site's own navigation, and are reproducible. Word counts
+    exclude script, style and comment blocks. Page counts are capped at the first 30 pages reached from each homepage and are a floor, not a
+    total.</b>
+    <b>Items recorded as "not found" or "none" describe what a static read of the served HTML returned on that date and are not proof of absence:
+    tags can load after render, and pages may exist that are not linked from the pages we read. Accreditation findings record what each firm
+    displays on its own site, not what it holds; a firm may hold accreditations it has not published, and publication is not verification &mdash;
+    we have not checked any scheme's register.</b>
+    <b>⚠ Regarding AEL Electrical: we observe only that Google Ads and conversion tags are present on their website. We have no access to their ad
+    account, spend, bidding, keywords or results, and we make no claim that their advertising is profitable, nor that paid search would work for
+    your business. The inference that a measured campaign left running is likely to be working is a general commercial observation, not a finding
+    about that firm.</b>
+    <b>Caztec Group was excluded from this comparison: the domain caztec.co.uk currently serves an unrelated parked page rather than that firm's
+    website, so no measurement of them was possible and none is implied.</b>
+    <b>Statements about NEPO, council tendering and framework agreements are a general description of how North East public procurement is
+    published and are not procurement, legal or compliance advice. We have not checked whether your business is registered on any portal or named
+    on any framework, and nothing here asserts that it is or is not. Requirements vary by buyer, contract and framework.</b>
+    <b>Your turnover, profit, staff numbers, job volumes, job values, travel radius, tender frequency and sector split are as you described them
+    on our call of 24 September 2026 and have not been independently verified.</b>
+    <b>⚠ No enquiry, call, tender outcome, framework place, ranking or revenue result is promised, forecast or guaranteed anywhere in this
+    document.</b> Nothing here is a comment on the competence, licensing, insurance or workmanship of this or any other business. Company and
+    scheme names are used for identification only and belong to their respective owners. The grades are AG1's own editorial assessment.
   </div>
 </footer>
 </body></html>
