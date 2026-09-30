@@ -1,6 +1,7 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>All Assets &middot; S Davison Electrical &middot; AG1 Consulting</title><style>
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>All Assets &middot; S Davison (Electrical) Ltd &middot; AG1 Consulting</title><style>
 :root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
   --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -90,7 +91,9 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 @media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
 
 /* ---------- injected asset nav ---------- */
-.agnav{position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+/* display/padding/margin are declared explicitly so a page carrying its own bare
+   nav{} element rule (concept mockups do) cannot restyle the AG1 bar. */
+.agnav{display:block;padding:0;margin:0;position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
 .agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
 .agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
 .agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
@@ -99,7 +102,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 .agnav a.ext:hover{color:#fff}
 @media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
 </style></head><body>
-<nav class="agnav"><div class="inner"><a href="assets.html" class="on">All Assets</a><a href="./">Audit</a><a href="competitors.html">Competitors</a><a href="tenders.html">Where The Work Is Published</a></div></nav>
+<nav class="agnav"><div class="inner"><a href="assets.html" class="on">All Assets</a><a href="pricing.html">Deliverables &amp; Pricing</a><a href="demo-basic.html">Mock-up A</a><a href="demo-advanced.html">Mock-up B</a><a href="./">Audit</a><a href="competitors.html">Competitors</a><a href="tenders.html">Where Work Is Published</a></div></nav>
 <header>
   <div class="wrap">
     <div class="eyebrow">All Assets &middot; S Davison (Electrical) Ltd &middot; South Shields</div>
@@ -113,6 +116,9 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
     <div class="h">Everything In One Place</div>
     <table class="cmp">
       <tr><th>Asset</th><th>What it is</th></tr>
+      <tr><td><b><a href="https://andrei170.github.io/s-davison-audit/pricing.html" style="color:var(--accent)">Deliverables &amp; pricing &mdash; start here</a></b></td><td>The two website options at &pound;1,250 and &pound;1,750, both one-off with no monthly fee, and exactly what the &pound;500 difference buys</td></tr>
+      <tr><td><b><a href="https://andrei170.github.io/s-davison-audit/demo-basic.html" style="color:var(--accent)">Mock-up A &mdash; the &pound;1,250 site</a></b></td><td>Reachable, credentials visible, phone on every page. A design proposal, not a live site.</td></tr>
+      <tr><td><b><a href="https://andrei170.github.io/s-davison-audit/demo-advanced.html" style="color:var(--accent)">Mock-up B &mdash; the &pound;1,750 site</a></b></td><td>Adds a page per sector, the project photo area you asked for, and the information-for-buyers page</td></tr>
       <tr><td><b><a href="https://andrei170.github.io/s-davison-audit/" style="color:var(--accent)">Website &amp; commercial presence audit</a></b></td><td>Seven findings, rebuilt for commercial and public sector buyers rather than domestic enquiries</td></tr>
       <tr><td><b><a href="https://andrei170.github.io/s-davison-audit/competitors.html" style="color:var(--accent)">Competitor analysis</a></b></td><td>Five firms who actually compete with you, replacing the two domestic ones. One is buying Google Ads.</td></tr>
     </table>
