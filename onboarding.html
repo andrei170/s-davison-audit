@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Onboarding &middot; S Davison (Electrical) Ltd &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+/* ---------- injected asset nav ---------- */
+/* display/padding/margin are declared explicitly so a page carrying its own bare
+   nav{} element rule (concept mockups do) cannot restyle the AG1 bar. */
+.agnav{display:block;padding:0;margin:0;position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
+</style></head><body>
+<nav class="agnav"><div class="inner"><a href="onboarding.html" class="on">Onboarding</a><a href="https://andrei170.github.io/s-davison-preview/" target="_blank" rel="noopener">Draft Site</a><a href="assets.html">All Assets</a><a href="pricing.html">Deliverables &amp; Pricing</a><a href="demo-basic.html">Mock-up A</a><a href="demo-advanced.html">Mock-up B</a><a href="./">Audit</a><a href="competitors.html">Competitors</a><a href="tenders.html">Where Work Is Published</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Onboarding &middot; S Davison (Electrical) Ltd &middot; South Shields</div>
+    <h1>Your New Website: What Is Built, What We Need, And How It Goes Live</h1>
+    <div class="sub">Prepared for Michael Davison &middot; onboarding call, Friday 16 October 2026, 10:00 &middot; AG1 Consulting</div>
+  </div>
+</header>
+<section>
+  <div class="wrap">
+    <div class="h">Today&rsquo;s Goal</div>
+<ul class="road">
+<li><b>Approve the site and set a go-live date before your holiday.</b> Anything we cannot settle today gets a name and a date next to it.</li>
+<li><b>The draft is online for you to click through:</b> <a href="https://andrei170.github.io/s-davison-preview/" target="_blank" rel="noopener" style="color:var(--accent)"><b>open the draft site</b></a>. It is hidden from Google and marked as a draft until you approve it.</li></ul>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="h">What Is Built So Far</div>
+<table class="cmp"><tr><th>Part of the site</th><th>What is on it</th></tr><tr><td><a href="https://andrei170.github.io/s-davison-preview/" target="_blank" rel="noopener" style="color:var(--accent)"><b>Home</b></a></td><td>Your logo and red brand colours, phone number on every page, sectors, services, and a short About and For buyers section</td></tr><tr><td><a href="https://andrei170.github.io/s-davison-preview/services.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>9 service pages</b></a></td><td>Installation and rewiring, lighting and LED, emergency lighting, fire alarms, intruder alarms, CCTV, door entry, data cabling, testing and inspection. Written from the services listed on your current site</td></tr><tr><td><a href="https://andrei170.github.io/s-davison-preview/sectors.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>4 sector pages</b></a></td><td>Schools and colleges, council and public buildings, food and industrial, offices and retail</td></tr><tr><td><a href="https://andrei170.github.io/s-davison-preview/projects.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Projects</b></a></td><td>The school rewire and the food processing plant. Photos go here</td></tr><tr><td><a href="https://andrei170.github.io/s-davison-preview/for-buyers.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>For buyers</b></a></td><td>Company details, registered office and accreditations, for questionnaires. Insurance, policies and references go here once we have them</td></tr><tr><td><a href="https://andrei170.github.io/s-davison-preview/about.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>About</b></a></td><td>Family-owned, started as a sole trader, limited company since 2005</td></tr><tr><td><a href="https://andrei170.github.io/s-davison-preview/faq.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>FAQ</b></a></td><td>Nine common questions, set up so Google and AI assistants can read the answers</td></tr><tr><td><a href="https://andrei170.github.io/s-davison-preview/contact.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Contact</b></a></td><td>Phone, email, hours, your works unit with a map link, and a quote request email that asks for the site, the work and the timescale</td></tr></table>
+<ul class="road"><li><b>Behind the scenes:</b> every page has its own title and description for Google, your business details are marked up so Google can read them, there is a sitemap, and your existing Google Analytics carries over so you keep your history.</li>
+<li><b>Nothing goes live with a fact you have not confirmed.</b> Where we were unsure, we left it off rather than guess.</li></ul>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="h">What You Are Getting</div>
+<table class="cmp"><tr><th>Deliverable</th><th>Status</th></tr><tr><td>Design and build of the full site (layout approved 5 October)</td><td>&#9989; Built, waiting on your changes</td></tr><tr><td>Copy for every page, written from your current site and our calls</td><td>&#9989; Drafted, for your approval</td></tr><tr><td>Your logo and colours across the site</td><td>&#9989; Done, using the logo on your current site</td></tr><tr><td>Go-live on sdavisonelectrical.com with a working secure certificate (fixes the browser warning)</td><td>&#9744; Go-live day</td></tr><tr><td>Your Microsoft 365 email left exactly as it is, and tested both ways after the switch</td><td>&#9744; Go-live day</td></tr><tr><td>Google Search Console set up and the sitemap submitted, so Google finds the new pages</td><td>&#9744; Go-live day</td></tr><tr><td>Your existing Google Analytics kept, so no history is lost</td><td>&#9989; Built in</td></tr><tr><td>Google Business Profile matched to the site: same phone, address, hours and link</td><td>&#9744; Needs access (below)</td></tr><tr><td>Project photos and the buyer information added as you send them</td><td>&#9744; Needs your files (below)</td></tr></table>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="h">Your To-Do List: Confirm On The Call</div>
+<table class="cmp"><tr><th>Question</th><th>What your current site says</th></tr><tr><td>&#9744; Which phone number goes on the site?</td><td>07900 817 149 at the top of every page, 0191 456 5372 and 07768 813 672 on the contact page. The draft uses 07900 817 149</td></tr><tr><td>&#9744; Which address do customers see?</td><td>Your works unit: Unit 5, Site 2, Warburton&rsquo;s Storage, Forest Road, NE33 1PT. The registered office (Unit 316, South Shields Business Works) stays in the small print</td></tr><tr><td>&#9744; 30 years or 40 years?</td><td>Your home page says over 30 years, your Commercial and Industrial pages say over 40. We have left both off until you tell us which is right, and what it covers</td></tr><tr><td>&#9744; How many staff should we say?</td><td>Left off for now</td></tr><tr><td>&#9744; Which CHAS level?</td><td>Your current site says CHAS Accredited. You told us CHAS Advanced and Principal Contractor</td></tr><tr><td>&#9744; Is the service list right?</td><td>Do you still do intruder alarms, CCTV, door entry, street lighting and insurance work? Anything missing, like the large cable installations?</td></tr><tr><td>&#9744; Are the four sectors right?</td><td>Healthcare was in the first mock-up. Add it or leave it out?</td></tr><tr><td>&#9744; How far will you travel?</td><td>The draft says South Tyneside and the North East, and to ask about larger jobs further afield</td></tr><tr><td>&#9744; Who looks after the site day to day?</td><td>You, your dad, or us</td></tr><tr><td>&#9744; Who hosts your current site?</td><td>Its footer credits Websites and Print. If you pay them for hosting, that can stop once the new site is live</td></tr></table>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="h">Your To-Do List: Send By Email</div>
+<table class="cmp"><tr><th>What to send</th><th>Where it goes</th><th>Notes</th></tr><tr><td>&#9744; Logo, original file</td><td>Every page</td><td>We are using the logo from your current site. If there is a larger original (PNG, SVG or PDF), send it so it stays sharp</td></tr><tr><td>&#9744; CHAS and NICEIC certificates</td><td>For buyers page</td><td>So we can show the right level and expiry date</td></tr><tr><td>&#9744; Insurance certificates and cover levels</td><td>For buyers page</td><td>Public liability, employer&rsquo;s liability, professional indemnity</td></tr><tr><td>&#9744; Health and safety, environmental and quality policies</td><td>For buyers page</td><td>Only if you are happy for buyers to download them</td></tr><tr><td>&#9744; Project photos, with permission to use them</td><td>Projects page</td><td>Your dad mentioned he has plenty. Phone photos are fine</td></tr><tr><td>&#9744; A few lines on each project</td><td>Projects page</td><td>The school rewire, the food plant, and any others worth showing. Tell us if we can name the client</td></tr><tr><td>&#9744; The About Us wording your dad wrote</td><td>About page</td><td>Rough is fine, we will tidy it</td></tr><tr><td>&#9744; Team names and roles, and a team photo if you want one</td><td>About page</td><td>Optional</td></tr><tr><td>&#9744; Two or three references buyers can contact</td><td>For buyers page</td><td>Optional</td></tr></table>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="h">Your To-Do List: Access</div>
+<table class="cmp"><tr><th>Access</th><th>How to give it</th><th>Why</th></tr><tr><td>&#9744; Google Analytics</td><td>analytics.google.com &rarr; Admin (cog, bottom left) &rarr; Property access management &rarr; + &rarr; Add users &rarr; <b>andrei@ag1consulting.co</b> as Editor</td><td>Keeps your history and lets us check enquiries after launch</td></tr><tr><td>&#9744; Google Business Profile</td><td>Search your business name on Google while signed in &rarr; the three dots &rarr; Business Profile settings &rarr; People and access &rarr; Add &rarr; <b>andrei@ag1consulting.co</b> as Manager</td><td>So the phone, address, hours and website link match the new site</td></tr><tr><td>&#9744; GoDaddy</td><td>&#9989; Already done. On go-live day we need the login code that goes to your phone, so we do it together on a short call</td><td>Points your domain at the new site</td></tr><tr><td>&#9744; Google Search Console</td><td>Nothing to do. We verify it through GoDaddy on go-live day</td><td>Tells Google about the new pages</td></tr></table><ul class="road"><li><b>We will never ask for your email password.</b> Access is always given by adding us as a user, and you can remove it at any time.</li></ul>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="h">How Go-Live Works</div>
+<ul class="road">
+<li><b>1. You approve the draft in writing.</b> A reply to an email is enough.</li>
+<li><b>2. We build the live version:</b> the draft bar comes off and Google is allowed to list it.</li>
+<li><b>3. A 15-minute screen share for GoDaddy,</b> because the login code goes to your phone. Only the website records change. Your email records are not touched.</li>
+<li><b>4. We send a test email each way</b> to prove your email still works.</li>
+<li><b>5. We submit the sitemap to Google</b> and check your analytics is recording.</li>
+<li><b>While you are away:</b> tell us who can approve changes and receive the GoDaddy code, if you want it live before you are back.</li></ul>
+  </div>
+</section>
+<footer><div class="wrap">Prepared by AG1 Consulting for S Davison (Electrical) Ltd. Facts on the draft site come from your current website and our calls, and are shown for you to confirm before anything is published.</div></footer>
+</body></html>
