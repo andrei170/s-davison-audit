@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>What&rsquo;s Built &middot; S Davison (Electrical) Ltd &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+/* ---------- injected asset nav ---------- */
+/* display/padding/margin are declared explicitly so a page carrying its own bare
+   nav{} element rule (concept mockups do) cannot restyle the AG1 bar. */
+.agnav{display:block;padding:0;margin:0;position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
+</style></head><body>
+<nav class="agnav"><div class="inner"><a href="assets.html">Start Here</a><a href="onboarding.html">Onboarding</a><a href="progress.html" class="on">What&rsquo;s Built</a><a href="https://andrei170.github.io/s-davison-preview/" target="_blank" rel="noopener">Draft Site</a><a href="pricing.html">Deliverables &amp; Pricing</a><a href="demo-basic.html">Mock-up A</a><a href="demo-advanced.html">Mock-up B</a><a href="./">Audit</a><a href="competitors.html">Competitors</a><a href="tenders.html">Where Work Is Published</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">What&rsquo;s Built &middot; S Davison (Electrical) Ltd &middot; South Shields</div>
+    <h1>Your New Website So Far: What I Have Built, And What I Need From You</h1>
+    <div class="sub">Prepared for Michael Davison &middot; 16 October 2026 &middot; AG1 Consulting</div>
+  </div>
+</header>
+<section>
+  <div class="wrap">
+    <div class="h">In Short</div>
+<ul class="road">
+<li><b>Your new website is built as a full draft: 21 pages, up from the 5 on your current site.</b> <a href="https://andrei170.github.io/s-davison-preview/" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open the draft</b></a>. It is private and hidden from Google until you approve it.</li>
+<li><b>Everything on it comes from your current website and our calls.</b> Nothing is made up. Where two sources disagreed, or we could not confirm something, we left it off and it is on your to-do list instead.</li>
+<li><b>It is built to be found:</b> by Google, by AI assistants like ChatGPT, and by buyers checking you out before they invite you to quote.</li>
+<li><b>What is left is mostly yours to send:</b> photos, certificates and a few answers. See <a href="onboarding.html" style="color:var(--accent)"><b>your to-do list</b></a>.</li></ul>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="h">What I Have Done So Far</div>
+<table class="cmp"><tr><th>Done</th><th>What it means for you</th></tr><tr><td>&#9989; <b>Designed and built 21 pages</b> on the layout you approved on 5 October</td><td>One page per service and per type of building, so a buyer lands on the page that matches their job</td></tr><tr><td>&#9989; <b>Your logo and red brand colours</b> across every page</td><td>Taken from your current site, so the new site looks like your business</td></tr><tr><td>&#9989; <b>9 service pages</b>: installation and rewiring, lighting and LED, emergency lighting, fire alarms, intruder alarms, CCTV, door entry, data cabling, testing and inspection</td><td>Each one written from the services listed on your current site, with what is included and common questions</td></tr><tr><td>&#9989; <b>4 sector pages</b>: schools and colleges, council and public buildings, food and industrial, offices and retail</td><td>The buildings you told us you work in</td></tr><tr><td>&#9989; <b>A For buyers page</b> with company details, registered office and accreditations</td><td>Something a procurement officer can link to from a questionnaire</td></tr><tr><td>&#9989; <b>About, Projects, FAQ and Contact pages</b></td><td>Family business since 2005, the school and food plant jobs, nine common questions, and how to ask for a quote</td></tr><tr><td>&#9989; <b>About 6,800 words of content</b></td><td>Your current site has roughly 300 on its home page</td></tr><tr><td>&#9989; <b>Tap-to-call phone number on every page</b> and a quote request email that asks for the site, the work and the timescale</td><td>Better enquiries, with the details you need to price the job</td></tr><tr><td>&#9989; <b>Set up for Google on every page</b>: its own title and description, one main heading, image descriptions, your business details marked up, and a sitemap</td><td>The basics Google reads to understand and list each page</td></tr><tr><td>&#9989; <b>Set up for AI assistants</b>: FAQ answers marked up, plus a plain summary file of who you are and what you do</td><td>So tools like ChatGPT can describe your business accurately when someone asks for an electrician</td></tr><tr><td>&#9989; <b>Works on phones</b></td><td>Most people checking a contractor do it on a phone first</td></tr><tr><td>&#9989; <b>Your Google Analytics carried over</b></td><td>You keep your visitor history when the new site goes live</td></tr><tr><td>&#9989; <b>Put online as a private draft</b></td><td>So you can click through it now, and while you are away</td></tr></table>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="h">Before And After</div>
+<table class="cmp"><tr><th></th><th>Your current site</th><th>Your new site</th></tr><tr><td>Pages</td><td>5 (home, about, commercial, industrial, contact)</td><td><b>21</b></td></tr><tr><td>A page for each service</td><td>No. Two pages list everything</td><td><b>9 service pages</b></td></tr><tr><td>Security certificate</td><td>&#128308; <b>Expired</b> (checked 16 October). Browsers warn visitors before the site opens</td><td>A new certificate is set up on go-live day</td></tr><tr><td>Description for Google (home page)</td><td>&#128308; None</td><td>Every page has one</td></tr><tr><td>Main heading (home page)</td><td>&#128308; None</td><td>Every page has one</td></tr><tr><td>Image descriptions (home page)</td><td>&#128308; 0 of 13 images</td><td>All 43 images</td></tr><tr><td>Business details marked up for Google</td><td>&#128308; None</td><td>Every page</td></tr><tr><td>FAQ that Google and AI assistants can read</td><td>&#128308; None</td><td>10 pages</td></tr><tr><td>Leftover template posts</td><td>&#128308; &ldquo;Hello world!&rdquo; and placeholder demo text are still published in the blog feed</td><td>None</td></tr><tr><td>Years in business</td><td>&#9888; &ldquo;Over 30 years&rdquo; on the home page, &ldquo;over 40 years&rdquo; on two others</td><td>Left off until you confirm</td></tr><tr><td>Phone numbers</td><td>&#9888; Three different numbers</td><td>One, once you confirm which</td></tr></table><figure style="margin:14px 0 22px"><img src="img/before-home.png" alt="Your current home page, as it loaded for us on 16 October" style="width:100%;max-width:100%;border-radius:10px;border:1px solid rgba(255,255,255,.12)"><figcaption style="font-size:13.5px;opacity:.75;margin-top:6px">Your current home page, as it loaded for us on 16 October</figcaption></figure><figure style="margin:14px 0 22px"><img src="img/after-home.png" alt="The new home page (draft)" style="width:100%;max-width:100%;border-radius:10px;border:1px solid rgba(255,255,255,.12)"><figcaption style="font-size:13.5px;opacity:.75;margin-top:6px">The new home page (draft)</figcaption></figure><figure style="margin:14px 0 22px"><img src="img/after-service.png" alt="One of the nine service pages: testing and inspection" style="width:100%;max-width:100%;border-radius:10px;border:1px solid rgba(255,255,255,.12)"><figcaption style="font-size:13.5px;opacity:.75;margin-top:6px">One of the nine service pages: testing and inspection</figcaption></figure><figure style="margin:14px 0 22px"><img src="img/after-buyers.png" alt="The For buyers page" style="width:100%;max-width:100%;border-radius:10px;border:1px solid rgba(255,255,255,.12)"><figcaption style="font-size:13.5px;opacity:.75;margin-top:6px">The For buyers page</figcaption></figure><figure style="margin:14px 0 22px"><img src="img/after-mobile.png" alt="The new home page on a phone" style="width:380px;max-width:100%;border-radius:10px;border:1px solid rgba(255,255,255,.12)"><figcaption style="font-size:13.5px;opacity:.75;margin-top:6px">The new home page on a phone</figcaption></figure>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="h">Every Page On The Draft</div>
+<table class="cmp"><tr><th>Page</th><th>Link</th></tr><tr><td>Home</td><td><a href="https://andrei170.github.io/s-davison-preview/" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Services overview</td><td><a href="https://andrei170.github.io/s-davison-preview/services.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Installation and rewiring</td><td><a href="https://andrei170.github.io/s-davison-preview/electrical-installation-and-rewiring.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Lighting and LED upgrades</td><td><a href="https://andrei170.github.io/s-davison-preview/lighting.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Emergency lighting</td><td><a href="https://andrei170.github.io/s-davison-preview/emergency-lighting.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Fire alarms</td><td><a href="https://andrei170.github.io/s-davison-preview/fire-alarms.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Intruder alarms</td><td><a href="https://andrei170.github.io/s-davison-preview/intruder-alarms.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>CCTV</td><td><a href="https://andrei170.github.io/s-davison-preview/cctv.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Door entry and access control</td><td><a href="https://andrei170.github.io/s-davison-preview/door-entry-and-access-control.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Data cabling</td><td><a href="https://andrei170.github.io/s-davison-preview/data-cabling.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Testing and inspection</td><td><a href="https://andrei170.github.io/s-davison-preview/testing-and-inspection.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Sectors overview</td><td><a href="https://andrei170.github.io/s-davison-preview/sectors.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Schools and colleges</td><td><a href="https://andrei170.github.io/s-davison-preview/schools-and-colleges.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Council and public buildings</td><td><a href="https://andrei170.github.io/s-davison-preview/council-and-public-buildings.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Food and industrial</td><td><a href="https://andrei170.github.io/s-davison-preview/food-and-industrial.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Offices and retail</td><td><a href="https://andrei170.github.io/s-davison-preview/offices-and-retail.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Projects</td><td><a href="https://andrei170.github.io/s-davison-preview/projects.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>For buyers</td><td><a href="https://andrei170.github.io/s-davison-preview/for-buyers.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>About</td><td><a href="https://andrei170.github.io/s-davison-preview/about.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>FAQ</td><td><a href="https://andrei170.github.io/s-davison-preview/faq.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr><tr><td>Contact</td><td><a href="https://andrei170.github.io/s-davison-preview/contact.html" target="_blank" rel="noopener" style="color:var(--accent)"><b>Open</b></a></td></tr></table>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="h">What I Need From You</div>
+<ul class="road">
+<li><b>Answers to ten quick questions</b>, mostly which phone number, which address, 30 or 40 years, staff numbers, CHAS level, and whether the service list is right.</li>
+<li><b>Files by email:</b> your original logo, CHAS and NICEIC certificates, insurance details, project photos, a few lines on each project, and the About Us wording your dad wrote.</li>
+<li><b>Access:</b> add andrei@ag1consulting.co to Google Analytics (Editor) and your Google Business Profile (Manager).</li>
+<li><b>Your written approval</b>, then a 15-minute call for the GoDaddy login code on go-live day.</li>
+<li><a href="onboarding.html" style="color:var(--accent)"><b>The full to-do list, with how to do each step &rarr;</b></a></li></ul>
+  </div>
+</section>
+<footer><div class="wrap">Prepared by AG1 Consulting for S Davison (Electrical) Ltd. Facts on the draft site come from your current website and our calls, and are shown for you to confirm before anything is published.</div></footer>
+</body></html>
